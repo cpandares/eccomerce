@@ -17,7 +17,7 @@ const ProductDetails = ({ product, products }) => {
   }
 
   return (
-    <div>
+    <div className='animate animate__animated animate__fadeIn'>
       <div className="product-detail-container">
         <div>
           <div className="image-container">
@@ -110,7 +110,7 @@ export const getStaticProps = async ({ params: { slug }}) => {
   const product = await client.fetch(query);
   const products = await client.fetch(productsQuery);
 
-  console.log(product);
+  
 
   return {
     props: { products, product }

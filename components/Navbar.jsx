@@ -12,6 +12,10 @@ const { showCart, setShowCart, totalQuantities  } = useStateContext();
 
     return (
         <div className='navbar-container'>
+            <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+            />
             <p className='logo'>
                 <Link href="/">
                     HeadPhones 

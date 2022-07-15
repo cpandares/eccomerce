@@ -41,7 +41,7 @@ const Cart = () => {
     }
   
   return (
-    <div className="cart-wrapper" ref={cartRef}>
+    <div className="cart-wrapper animate animate__animated animate__fadeIn" ref={cartRef}>
       <div className="cart-container">
         <button
           type="button"
@@ -53,7 +53,7 @@ const Cart = () => {
           <span className="cart-num-items">({totalQuantities}) items</span>
         </button>
         {cartItems.length < 1 && (
-          <div className="empty-cart">
+          <div className="empty-cart animate animate__animated animate__fadeIn">
             <AiOutlineShopping size={150} />
             <h3>Cart empty</h3>
             <Link href="/">
